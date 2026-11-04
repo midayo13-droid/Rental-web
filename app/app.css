@@ -1,0 +1,46 @@
+/* 코어 웹 전용 스타일 (공통 토큰은 globals.css) */
+body { background: var(--gray-100); }
+.frame { max-width: 480px; min-height: 100vh; margin: 0 auto; background: #fff; position: relative; display: flex; flex-direction: column; }
+.topbar { height: 52px; display: flex; align-items: center; justify-content: space-between; padding: 0 16px; border-bottom: 1px solid var(--border); background: #fff; position: sticky; top: 0; z-index: 10; }
+.topbar .brand { font-size: 16px; font-weight: 700; color: var(--text-strong); }
+.page { flex: 1; padding: 16px 16px 96px; display: flex; flex-direction: column; gap: 16px; }
+.page.bare { padding-bottom: 32px; justify-content: center; }
+.tabbar { position: fixed; bottom: 0; left: 50%; transform: translateX(-50%); width: 100%; max-width: 480px; height: 64px; background: #fff; border-top: 1px solid var(--border); display: flex; z-index: 20; }
+.tabbar a { flex: 1; display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 2px; font-size: 11px; color: var(--gray-500); -webkit-tap-highlight-color: transparent; }
+.tabbar a:active { background: rgba(20, 26, 36, 0.06); }
+.tabbar a.on { color: var(--primary); font-weight: 600; }
+.tabbar svg { width: 24px; height: 24px; }
+.center { display: flex; align-items: center; justify-content: center; padding: 48px 0; }
+.section-title { display: flex; align-items: center; justify-content: space-between; }
+.list { display: flex; flex-direction: column; gap: 12px; }
+.card-title { font-size: 16px; font-weight: 600; color: var(--text-strong); }
+.card-meta { font-size: 13px; color: var(--text-2); line-height: 20px; }
+.chips { display: flex; gap: 8px; overflow-x: auto; padding-bottom: 2px; scrollbar-width: none; }
+.chips::-webkit-scrollbar { display: none; }
+.pick { flex-shrink: 0; }
+.stats { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; }
+.stat .k { font-size: 13px; color: var(--text-2); }
+.stat .v { font-size: 22px; line-height: 32px; }
+.fuel-row { display: flex; justify-content: space-between; align-items: center; gap: 12px; padding: 10px 0; border-bottom: 1px solid var(--border); }
+.fuel-row:last-child { border-bottom: 0; }
+.fuel-row .amt { font-size: 18px; }
+.shortcuts { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; }
+.shortcut { display: flex; flex-direction: column; gap: 8px; }
+.shortcut svg { width: 24px; height: 24px; color: var(--primary); }
+.big-amount { font-size: 34px; line-height: 44px; }
+.chat { display: flex; flex-direction: column; gap: 10px; flex: 1; }
+.bubble { max-width: 85%; padding: 10px 14px; border-radius: 16px; font-size: 15px; line-height: 22px; white-space: pre-wrap; word-break: break-word; }
+.bubble.me { align-self: flex-end; background: var(--primary); color: #fff; border-bottom-right-radius: 4px; }
+.bubble.bot { align-self: flex-start; background: var(--gray-100); color: var(--text-strong); border-bottom-left-radius: 4px; }
+.bubble.err { background: var(--red-50); color: var(--red-600); }
+.chat-input { position: fixed; bottom: 64px; left: 50%; transform: translateX(-50%); width: 100%; max-width: 480px; background: #fff; border-top: 1px solid var(--border); padding: 10px 16px; display: flex; gap: 8px; z-index: 15; }
+.chat-input .input { flex: 1; }
+.back { display: inline-flex; align-items: center; gap: 2px; color: var(--text-2); font-size: 14px; background: none; border: 0; padding: 4px 0; cursor: pointer; font-family: inherit; }
+.search-results { display: flex; flex-direction: column; border: 1px solid var(--border); border-radius: var(--r-input); overflow: hidden; }
+.search-results button { text-align: left; background: #fff; border: 0; border-bottom: 1px solid var(--border); padding: 12px 14px; font-family: inherit; font-size: 14px; color: var(--text); cursor: pointer; }
+.search-results button:last-child { border-bottom: 0; }
+.search-results button:active { background: rgba(20, 26, 36, 0.06); }
+.dialog h3 { font-size: 18px; }
+.dialog .actions { display: flex; gap: 8px; }
+.dialog .actions .btn { flex: 1; }
+.field.has-error .input, .field.has-error .select { border-color: var(--red-500); }
