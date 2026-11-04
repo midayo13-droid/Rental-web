@@ -38,8 +38,8 @@ export default function ChatPage() {
 
   return (
     <>
-      <h1>규정 챗봇</h1>
-      {!connected && <div className="alert alert-caution">규정 챗봇이 아직 연결되지 않았어요. 규정 문서를 확인하거나 총무팀에 문의해 주세요.</div>}
+      <h1>누리 안내봇</h1>
+      {!connected && <div className="alert alert-caution">누리 안내봇이 아직 연결되지 않았어요. 규정 문서를 확인하거나 총무팀에 문의해 주세요.</div>}
       <div className="chat" style={{ paddingBottom: 150 }}>
         {msgs.length === 0 && <div className="empty">예: 차량은 며칠까지 빌릴 수 있어요?</div>}
         {msgs.map((m, i) => <div key={i} className={`bubble ${m.role} ${m.error ? "err" : ""}`}>{m.text}</div>)}

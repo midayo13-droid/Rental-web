@@ -49,7 +49,7 @@ export default function HomePage() {
 
       <div className="shortcuts">
         <Link href="/claims" className="card clickable shortcut"><WonIcon /><span className="card-title">개인 차량 정산</span><span className="card-meta">1km당 200원</span></Link>
-        <Link href="/chat" className="card clickable shortcut"><ChatIcon /><span className="card-title">규정 챗봇</span><span className="card-meta">규정을 물어보세요</span></Link>
+        <Link href="/chat" className="card clickable shortcut"><ChatIcon /><span className="card-title">누리 안내봇</span><span className="card-meta">궁금한 건 편하게 물어보세요</span></Link>
       </div>
     </>
   );

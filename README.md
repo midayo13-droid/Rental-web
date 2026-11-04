@@ -1,6 +1,6 @@
 # Rental-web — 누리상사 법인차량 코어 웹
 
-누리상사 총무팀 **법인차량 예약·운행 기록** 웹앱의 **임직원용 화면**(Next.js)입니다. 휴대폰 화면 중심이고, 예약 신청, 출발·주유·도착 입력, 개인 차량 정산, 규정 챗봇을 씁니다.
+누리상사 총무팀 **법인차량 예약·운행 기록** 웹앱의 **임직원용 화면**(Next.js)입니다. 휴대폰 화면 중심이고, 예약 신청, 출발·주유·도착 입력, 개인 차량 정산, 누리 안내봇을 씁니다.
 
 - 총무팀 화면(어드민) 저장소: [Rental-admin](https://github.com/midayo13-droid/Rental-admin)
 - 서버(백엔드) 저장소: [Rental-backend](https://github.com/midayo13-droid/Rental-backend)
