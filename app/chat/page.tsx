@@ -45,7 +45,7 @@ export default function ChatPage() {
         {msgs.map((m, i) => <div key={i} className={`bubble ${m.role} ${m.error ? "err" : ""}`}>{m.text}</div>)}
         {busy && <div className="bubble bot"><span className="spinner" /></div>}
         <div className="help">
-          챗봇 답은 참고용이에요.<br />
+          ※ 챗봇 답은 참고용이에요.<br />
           규정 문서가 우선이고 최종 판단은 총무팀이 해요.<br />
           이름·연락처 같은 개인정보는 적지 마세요.
         </div>
