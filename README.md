@@ -20,17 +20,6 @@
 | 어드민 | https://rental-admin-nine.vercel.app |
 | 백엔드(서버) | https://rental-backend-r63r.onrender.com  (확인: `/health`) |
 
-## 확인용 계정 (가상)
-
-| 구분 | 이메일 | 비밀번호 | 할 수 있는 일 |
-|---|---|---|---|
-| **일반(고객·임직원)** | `customer01@nuri.test` (김누리) | `Customer#2026` | **자기 예약만** 보고 신청·취소, 출발·주유·도착, 개인 차량 정산 |
-| 일반 직원(총무팀) | `staff1@nuri.test` | `Staff#2026` | 자기 예약용으로 사용 가능 (총무팀 업무는 어드민) |
-| 관리자 | `admin@nuri.test` | `Admin#2026` | 자기 예약용으로 사용 가능 |
-
-그 밖의 고객 계정: `sales@nuri.test`, `dev@nuri.test`, `mk@nuri.test` (모두 `Customer#2026`).
-**회원가입 시연:** `/signup` 에서 직원 명부의 사번·이름으로 가입합니다. 예: 사번 `E010` / 이름 `한재무`.
-
 ## Vercel에 올리기
 
 | 항목 | 값 |
